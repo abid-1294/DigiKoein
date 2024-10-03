@@ -4,7 +4,7 @@ import DigitalImg from '../assets/DigitalIMG.png';
 import ClearingImg from '../assets/ClearningIMG.png';
 import ProvedenceImg from '../assets/ProvenanceIMG.png';
 import MultiPartImg from '../assets/MultiPartyIMG.png';
-import RecordImg from '../assets/RecordImg.png';
+import RecordImg from '../assets/RecordIMG.png';
 import InsuranceImg from '../assets/InsuranceIMG.png';
 export default [
     {   
