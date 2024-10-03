@@ -1,0 +1,27 @@
+.home {
+    background: url("./assets/Banner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 177px;
+    padding-bottom: 100px;
+    position: relative;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    width: 100%;
+    background: rgba(0, 5, 27, 0.08);
+    z-index: 1000;
+  }
+
+  @media (max-width: 767px) {
+    .home {
+      background-size:auto;
+      background-position: left;
+      padding: 9rem 0.31rem;
+    }
+  }

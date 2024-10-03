@@ -1,0 +1,30 @@
+*{
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+ul,ol{
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+  line-height: 0.8;
+}
+.container{
+  width: 1440px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  *{
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 767px;
+    margin: 0;
+  }
+}

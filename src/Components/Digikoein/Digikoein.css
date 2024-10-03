@@ -1,0 +1,75 @@
+.digikoeinBody {
+  background: url("../../assets/DigiKoeinBGImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 165px 0;
+}
+.digikoeinContent {
+  left: 50px;
+  width: 732px;
+  margin-left: auto;
+}
+.digikoeinContent h1 {
+  font-weight: 700;
+  font-size: 60px;
+  color: white;
+}
+.digikoeinContent p {
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  line-height: 27px;
+}
+.pspan {
+  font-weight: 600;
+  color: #fcd64e;
+}
+.digikoeinContent a{
+    width: 158px;
+    height: 48px;
+    padding: 13px 30px;
+    color: white;
+    margin-top: 40px;
+    background: linear-gradient(to right, #FCD64E, #ED8F07);
+    border-radius: 9px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .digikoeinContent a:hover{
+    border: 1px solid #FCD64E;
+    background: #ED8F07;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  /* ------Responsive styles------ */
+
+/* ---------- Mobile view ----------- */
+@media (max-width: 767px) {
+  .digikoeinBody {
+    background: url("../../assets/DigiKoeinBGImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+  }
+  .digikoeinContent {
+    text-align: left;
+  }
+  .digikoeinContent h1 {
+    font-size: 20px;
+  }
+  .digikoeinContent p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 110%;
+    width: 40%;
+  }
+  .digikoeinContent a{
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+}

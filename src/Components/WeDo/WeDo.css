@@ -1,0 +1,221 @@
+.wedoBody {
+  background: #00051b;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.bgLayer {
+  width: 1248px;
+  height: 1248px;
+  background: linear-gradient(to top, #fcd64e, #ed8f07);
+  border-radius: 50%;
+  filter: blur(600px);
+  position: absolute;
+  top: -150%;
+  left: -60%;
+  z-index: 10;
+}
+.bgLayertwo {
+  width: 1248px;
+  height: 1248px;
+  background: linear-gradient(to top, #fcd64e, #ed8f07);
+  border-radius: 50%;
+  filter: blur(600px);
+  position: absolute;
+  bottom: -150%;
+  right: -70%;
+  z-index: 10;
+}
+.wedoContent {
+  display: grid;
+  grid-template-columns: 5fr 7fr; /* 5 columns for the left section, 7 for the slider */
+  gap: 40px;
+  align-items: center;
+  z-index: 305;
+}
+
+.wedoContent-item {
+  padding: 20px;
+}
+
+.wedoContent-item h1 {
+  color: white;
+  line-height: 62.4px;
+  font-size: 48px;
+  font-weight: 700;
+  z-index: 500;
+}
+
+.wedoContent-item p {
+  color: white;
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 6px;
+  width: 532px;
+}
+
+.arrow {
+  color: #f8c100;
+  margin-top: 19px;
+  width: 61px;
+  height: 54px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  margin-right: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Slider Section */
+.slider {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 342px;
+  margin: 0 12px;
+  border-radius: 13px;
+  padding: 20px;
+  background: rgba(61, 49, 79, 0.38);
+}
+
+.slide:hover {
+  box-shadow: rgba(90, 40, 41, 0.85) 0px -80px 80px -50px inset;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.slide h3 {
+  font-size: 20px;
+  line-height: 39.5px;
+  font-weight: 700;
+  color: white;
+  margin-top: 30px;
+}
+.slide:hover h3 {
+  color: #f8c100;
+}
+
+.slide p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #cfcfcf;
+  width: 300px;
+}
+
+.imgStyle {
+  width: 62px;
+  height: 62px;
+  border-radius: 10px;
+  background: #525476;
+  padding: 14px;
+}
+.slide:hover .imgStyle {
+  background: rgba(90, 40, 41);
+  padding: 4px;
+  transition: all 0.3s linear;
+}
+.slide:hover .imgStyle img {
+  width: 57px;
+  height: 57px;
+  transition: all 0.3s linear;
+}
+/* ------Responsive styles------ */
+
+/* ---------- Mobile view ----------- */
+@media (max-width: 767px) {
+  .wedoBody {
+    padding: 50px 15px;
+  }
+  .bgLayer {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+  }
+  .bgLayertwo {
+    width: 50px;
+    height: 50px;
+  }
+  .wedoContent {
+    display: block;
+  }
+  
+  .wedoContent-item h1 {
+    width: 40%;
+    line-height: 0.5 rem;
+    font-size: 1.5rem;
+  }
+  .wedoContent-item p {
+    line-height: 1rem;
+    font-size: 14px;
+    margin-top: 4px;
+    width:90vw;
+    padding-right: 30px;
+  }
+  
+  .arrow {
+    display: none;
+  }
+
+  .slider {
+    display: block;
+  }
+  
+  .slides-wrapper {
+    display: block;
+  }
+  
+  .slide {
+    width: 40%;
+    margin: 0.5rem 0;
+  }
+  
+  .slide h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+  }
+  .slide p {
+    margin-top: 0.6rem;
+    font-size: 14px;
+    line-height: 1rem;
+    width: 95%;
+  }
+  
+  .imgStyle {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+  .imgStyle img{
+    width: 30px;
+    height: 30px;
+  }
+  .slide:hover .imgStyle img {
+    width: 30px;
+    height: 30px;
+  }
+  .wedoContent-item {
+    padding: 15px;
+  }
+}

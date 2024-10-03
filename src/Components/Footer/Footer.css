@@ -1,0 +1,108 @@
+.footerPart {
+  padding: 100px 0;
+  background-color: #00051b;
+}
+.footerContent {
+  display: flex;
+}
+.companyIntro {
+  width: 555px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 197px;
+}
+.logo h2 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.companyIntro h4 {
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-top: 140px;
+}
+.sitemap {
+  width: 237px;
+  margin-left: 140px;
+}
+.legal,
+.about {
+  margin-left: 140px;
+  width: 105px;
+}
+.legal h3,
+.sitemap h3,
+.about h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 22px;
+}
+.companyIntro p,
+.legal ul li a,
+.sitemap ul li a,
+.about ul li a {
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ------Responsive styles------ */
+
+/* ---------- Mobile view ----------- */
+@media (max-width: 767px) {
+  .footerPart {
+    padding: 20px 8px;
+  }
+  .footerContent {
+    display: block;
+  }
+  .companyIntro {
+    max-width: 365px;
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 365px;
+    margin: 0 auto;
+  }
+  .companyIntro h4 {
+    line-height: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+  }
+  .legal,
+  .about
+  .sitemap {
+    width: 365px;
+    margin-top: 20px;
+  }
+  .legal h3,
+  .sitemap h3,
+  .about h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+  }
+  .companyIntro p,
+  .legal ul li a,
+  .sitemap ul li a,
+  .about ul li a {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    width: 360px;
+  }
+}

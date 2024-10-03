@@ -1,0 +1,123 @@
+.homebody {
+  text-align: center;
+}
+.homebody p {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: regular;
+  text-transform: capitalize;
+  color: #7c7c7c;
+}
+.homebody h1 {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  line-height: normal;
+}
+.homebody h5 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  margin-top: 12px;
+  line-height: 26px;
+  width: 59%;
+  margin: 0 auto;
+}
+.homebody a{
+  width: 158px;
+  height: 56px;
+  padding: 19px 30px;
+  color: white;
+  margin-top: 33px;
+  background: linear-gradient(to right, #FCD64E, #ED8F07);
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.homebody a:hover{
+  border: 1px solid #FCD64E;
+  background: #ED8F07;
+  transition: all 0.3s ease-in-out;
+}
+.scrollKey {
+  width: 42px;
+  height: 65px;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  padding: 2px 13px;
+  margin: 98px auto 0px;  
+}
+
+.circle{
+  background: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 5px;
+  animation: upDown 1.5s infinite;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.homebody h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin: 18px auto;
+}
+
+.downArrow{
+  font-size: 30px;
+  color: white;
+}
+ /* ------Responsive styles------ */
+
+/* ---------- Mobile view ----------- */
+@media (max-width: 767px) {
+  .homebody {
+    text-align: left;
+  }
+  .homebody p {
+    font-size: 0.88rem;
+  }
+  .homebody h1 {
+    font-size: 1.5rem;
+    width: 45%;
+  }
+  .homebody h5 {
+    font-size: 0.5rem;
+    width: 30%;
+    line-height: 0.88rem;
+    text-align: left;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .homebody a{
+    width: 120px;
+    height: 40px;
+    padding: 10px 15px;
+    color: white;
+  }
+  .scrollKey {
+    margin: 50px 20%; 
+  }
+  .homebody h6 {
+    margin:0px 17%;
+  }
+  
+  .downArrow{
+    display: none;
+  }
+}

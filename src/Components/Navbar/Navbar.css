@@ -1,0 +1,140 @@
+.navbarContent {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 197px;
+}
+.logo p {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.navlist {
+  padding-left: 19px;
+  margin-left: 30px;
+  border-left: 1px solid #afafaf;
+}
+.navlist ul {
+  display: flex;
+  align-items: center;
+}
+.navlist ul li a {
+  margin-right: 40px;
+  color: #afafaf;
+  font-size: 18px;
+  font-weight: normal;
+}
+.navlist ul li a:hover {
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 400ms ease-in-out;
+}
+.language-switcher {
+  margin-left: auto;
+  padding-right: 12px;
+  border-radius: 9px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.language-switcher select {
+  width: 126px;
+  height: 48px;
+  padding: 12px 0px 12px 19px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 9px;
+  color: white;
+  background: transparent;
+  border: none;
+}
+.language-switcher select option {
+  color: black;
+}
+
+/* Toggle Bar for Mobile */
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide navlist for mobile, show only when toggled */
+.navlist {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlist.active {
+  display: block;
+}
+
+/* Mobile View (max-width: 767px) */
+@media (max-width: 767px) {
+  .navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+
+  }
+
+  .logo {
+    order: 1;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 0px;
+    margin: 0px;
+  }
+
+  .logo p {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .menu-icon {
+    order: 3;
+    display: block;
+
+  }
+
+  .language-switcher {
+    order: 2;
+    width: 100px;
+    text-align: center;
+    margin-right: 15%;
+  }
+
+  .navlist {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .navlist ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navlist ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navlist ul li a {
+    margin: 0;
+    font-size: 20px;
+  }
+}
